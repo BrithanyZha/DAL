@@ -1,0 +1,59 @@
+====================================================================================================
+Herding Cats - Test Runner with Detailed Conditions
+====================================================================================================
+
+Test 1: test_input_1.txt
+  Description : Sample dari ICPC Problem Statement (2 test cases)
+  Condition   : Case 1: [3 cats, 5 pots] - Solvable (Valid arrangement exists)
+  Detail      : Case 2: [3 cats, 5 pots] - Impossible (Last cat targets pot 5, conflicts)
+  Status      : PASS
+  Runtime     : 97.87 ms
+  Output      : yes | no
+  Expected    : yes | no
+
+Test 2: test_input_2.txt
+  Description : Simple Valid Case
+  Condition   : 3 cats, 3 pots - Each cat targets different pot
+  Detail      : Each cat likes unique plant (no conflicts) - Lintasan Lurus
+  Status      : PASS
+  Runtime     : 74.97 ms
+  Output      : yes
+  Expected    : yes
+
+Test 3: test_input_3.txt
+  Description : Impossible Case - Plant Conflict
+  Condition   : 4 cats, 6 pots - Multiple cats want different pots
+  Detail      : Pot 1 is non-target but all plants are liked - No safe plant for pot 1
+  Status      : PASS
+  Runtime     : 73.42 ms
+  Output      : no
+  Expected    : no
+
+Test 4: test_input_4.txt
+  Description : Impossible Case - No Safe Plant
+  Condition   : 6 cats, 8 pots - Complex preferences
+  Detail      : Pot 1 is non-target but all 8 plants are used by cats - Impossible to fill
+  Status      : PASS
+  Runtime     : 70.28 ms
+  Output      : no
+  Expected    : no
+
+Test 5: test_input_5.txt
+  Description : Mixed Cases (2 test cases)
+  Condition   : Case 1: [4 cats, 5 pots] - Pot 1 non-target, all plants liked
+  Detail      : Case 2: [5 cats, 6 pots] - Pot 1 non-target, all plants liked
+  Status      : PASS
+  Runtime     : 70.35 ms
+  Output      : no | no
+  Expected    : no | no
+
+====================================================================================================
+SUMMARY
+====================================================================================================
+Passed        : 5/5
+Total Runtime : 386.89 ms
+Avg Runtime   : 77.38 ms
+Time Limit    : 2000 ms (2 seconds)
+Status        : SAFE - All tests completed within time limit
+Result        : ALL TESTS PASSED ✓
+====================================================================================================
